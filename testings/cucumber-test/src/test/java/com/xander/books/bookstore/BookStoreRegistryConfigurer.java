@@ -6,8 +6,6 @@ import io.cucumber.core.api.TypeRegistry;
 import io.cucumber.core.api.TypeRegistryConfigurer;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.datatable.DataTableType;
-import io.cucumber.datatable.DataTableTypeRegistry;
-import io.cucumber.datatable.DataTableTypeRegistryTableConverter;
 import io.cucumber.datatable.TableTransformer;
 
 /**
@@ -24,7 +22,7 @@ public class BookStoreRegistryConfigurer implements TypeRegistryConfigurer {
     private static class BookTableTransformer implements TableTransformer<BookCatalog> {
 
         @Override
-        public BookCatalog transform(DataTable table) throws Throwable {
+        public BookCatalog transform(DataTable table) {
 
             BookCatalog catalog = new BookCatalog();
 
