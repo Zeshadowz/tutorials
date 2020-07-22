@@ -34,5 +34,7 @@
 
   <modules>
     <module>cucumber-test</module>
+      <module>selenium-test</module>
+    <module>spring-cucumber</module>
   </modules>
 </project>

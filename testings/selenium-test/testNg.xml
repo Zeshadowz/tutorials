@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Gmail Suite" thread-count="1" verbose="1" annotations="JDK" parallel="tests">
+    <!--test name="flipkart">
+        <classes>
+            <class name="com.xander.selenium.Flipkart"></class>
+        </classes>
+    </test-->
+    <test name="GitLab">
+        <classes>
+            <class name="com.xander.selenium.testRunner.GitlabRunner"></class>
+        </classes>
+    </test>
+</suite>
