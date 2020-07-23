@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   jenkins:
-    images: jenkins/jenkins:lts
+    image: jenkins/jenkins:lts
     privileged: true
     user: root
     ports:
@@ -9,7 +9,8 @@ services:
       - 50000:50000
     container_name: jenkins
     volumes:
+      #- ~/jenkins:/var/jenkins_home
       - $HOME/jenkins/data:/var/jenkins_home          # Persists jenkins data inside the container at the volume
       - /var/run/docker.sock:/var/run/docker.sock     # Expose the docker daemon in the container
       - /usr/local/bin/docker:/usr/local/bin/docker
-      - /home/jenkins:/home/jenkins                   # Avoid mysql volume mount issue
+      - $HOME/jenkins:/home/jenkins                   # Avoid mysql volume mount issue
