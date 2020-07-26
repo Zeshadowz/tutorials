@@ -78,7 +78,7 @@ $ docker run hello-world
 The software will contact the Docker daemon, pull the “hello-world” image, and create a new container based on that image.
 Once it goes through all the steps, the output should inform you that **your installation appears to be working correctly**.
 
-<img alt="sf" src="../img/docker-hello-world-service.png">
+<img alt="sf" src="https://github.com/Zeshadowz/tutorials/blob/develop/docker/raspberry-pi-4/img/docker-hello-world-service.png">
 
 ## Install proper dependencies
 ````bash
